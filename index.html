@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+    }
+    h1 {
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 700;
+    }
+    .learn-more-button {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-radius: 30px;
+      border: none
+    }
+    #sedan:hover {
+      background-color: hsl(31, 77%, 52%);
+      border: white 2px solid;
+      color: white !important;
+    }
+    #suv:hover {
+      background-color: hsl(184, 100%, 22%);
+      border: white 2px solid;
+      color: white !important;
+    }
+    #luxury:hover {
+      background-color: hsl(179, 100%, 13%);
+      border: white 2px solid;
+      color: white !important;
+    }
+    /* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .container {
+    margin-left: 20%;
+     margin-right: 20%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div style="margin-top:200px; display:flex;" class="container">
+    <div style="background-color: hsl(31, 77%, 52%);">
+      <div style="padding: 30px; color: white;"> 
+        <img src="images/icon-sedans.svg" alt="">
+        <h1>Sedans</h1>
+        <p>
+        Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.
+        </p>
+        <button class="learn-more-button" id="sedan" style="color: hsl(31, 77%, 52%);">Learn more</button>
+      </div>
+    </div> 
+    <div style="background-color: hsl(184, 100%, 22%);">
+      <div style="padding: 30px; color: white"> 
+        <img src="images/icon-suvs.svg" alt="">
+        <h1>SUVs</h1>
+        <p>
+        Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.
+        </p>
+        <button class="learn-more-button" id="suv" style="color: hsl(184, 100%, 22%);">Learn more</button>
+      </div> 
+    </div> 
+    <div style="background-color: hsl(179, 100%, 13%);">
+      <div style="padding: 30px; color: white"> 
+        <img src="images/icon-luxury.svg" alt="">
+        <h1>Luxury</h1>
+        <p>
+         Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.
+        </p>
+        <button class="learn-more-button" id="luxury" style="color: hsl(179, 100%, 13%);">Learn more</button>
+      </div>
+    </div> 
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
